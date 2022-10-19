@@ -1,2 +1,2 @@
-# WarGoodSetru.github.io
+# Мазурин Максим
 Мой сайт
