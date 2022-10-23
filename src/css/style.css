@@ -81,6 +81,7 @@ background-color: rgb(61, 44, 44);
     font-size: 25px;
     padding: 20px;
     padding-left: 300px;
+    text-align: justify;
 }
 
 .logo_about_me input{
@@ -94,3 +95,165 @@ background-color: rgb(61, 44, 44);
     float: left;
 }
 
+.my_skill{
+    background: url(../img/body_fons.jpg);
+    background-size: cover;
+    border-radius: 50px;
+    height: 400px;
+    margin-top: 10px;
+    
+}
+.logo_my_skill{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 15px;
+    color: rgb(61, 44, 44);
+    
+}
+.colonka{
+    columns: 90px 4;
+    margin: 40px;
+    font-size: 20px;
+}
+.colonka h4{
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+
+.colonka p {
+    text-align: justify;
+    padding-top: 30px;
+}
+.colonka img{
+    height: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.boxsing{
+    background: url(../img/body_fons.jpg);
+    background-size: cover;
+    border-radius: 50px;
+    height: 430px;
+    margin-top: 10px;
+    margin-top: 10px;
+}
+.logo_box{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 15px;
+    color: rgb(61, 44, 44);
+    
+}
+.box img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    height: 290px;
+}
+
+.cost_calculation{
+    background: url(../img/body_fons.jpg);
+    background-size: cover;
+    border-radius: 50px;
+    height: 400px;
+    margin-top: 10px;
+    
+}
+.logo_cost_calculation{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 15px;
+    color: rgb(61, 44, 44);
+}
+.cost_calculation select{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.statistics{
+    background: url(../img/body_fons.jpg);
+    background-size: cover;
+    border-radius: 50px;
+    height: 430px;
+    margin-top: 10px;
+    margin-top: 10px;
+}
+.logo_statistics{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 15px;
+    color: rgb(61, 44, 44);
+}
+
+.colonka_statistics{
+    columns: 90px 4;
+    margin: 40px;
+    font-size: 20px;
+}
+.colonka_statistics h2{
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+
+.colonka_statistics p{
+    text-align: justify;
+    padding-top: 15px;
+}
+.reviews{
+    background: url(../img/body_fons.jpg);
+    background-size: cover;
+    border-radius: 50px;
+    height: 430px;
+    margin-top: 10px;
+    margin-top: 10px;
+}
+.logo_reviews{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 15px;
+    color: rgb(61, 44, 44);
+}
+.reviews_user img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    height: 290px;
+}
+.reviews p{
+    text-align: center;
+    margin-top: 20px;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    background: #344051;
+    margin-top: 10px;
+}
+footer h2{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 15px;
+    color: aliceblue;
+}
+footer p{
+    text-align: center;
+    color: aliceblue;
+}
+.colonka_my_contact{
+    columns: 90px 4;
+    margin: 40px;
+    font-size: 20px;
+}
+.my_contact_icon img{
+    height: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
