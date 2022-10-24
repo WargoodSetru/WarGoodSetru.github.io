@@ -1,6 +1,11 @@
 html{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(155, 118, 101);
+    
+    /*Запрещаем выделять текст*/
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;    
 }
 nav{
     position: fixed;
@@ -26,6 +31,12 @@ nav{
     margin-right: 30px;
     font-size: 17px;
     text-transform: uppercase; /* Текст большими буквами*/
+}
+.menu a{
+    color: aliceblue;
+}
+.logo a{
+    color: aliceblue;
 }
 
 .main{
@@ -231,9 +242,15 @@ background-color: rgb(61, 44, 44);
 }
 footer{
     width: 100%;
-    height: 300px;
+    height: 301px;
     background: #344051;
     margin-top: 10px;
+}
+footer p {
+color:aliceblue;
+font-size: 20px;
+text-align:center;
+padding-top: 32px;
 }
 footer h2{
     text-align: center;
@@ -241,19 +258,19 @@ footer h2{
     padding-top: 15px;
     color: aliceblue;
 }
-footer p{
-    text-align: center;
-    color: aliceblue;
-}
 .colonka_my_contact{
+    padding-top: 40px;
     columns: 90px 4;
     margin: 40px;
     font-size: 20px;
+    
 }
 .my_contact_icon img{
     height: 80px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
+}
+.my_contact_icon a{
+    display: block;
 }

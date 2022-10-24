@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Это моя первая страница...">
@@ -15,23 +15,23 @@
 
 <header><!-- Шапка -->
 
+
     <nav><!-- Меню -->
-        <div class="logo">Максим Мазурин</div>
+        <div class="logo"><a href="#main">Максим Мазурин</a></div>
         <div class="menu">
             <ul>
-            <li>Обо мне</li>
-            <li>Услуги</li>
-            <li>Кейсы</li>
-            <li>Прайс</li>
-            <li>Отзывы</li>
-            <li>Контакты</li>
+            <li><a href="#about_me">Обо мне</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#boxsing">Кейсы</a></li>
+            <li><a href="#">Прайс</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#my_contact">Контакты</a></li>
             </ul>
         </div>
     </nav><!-- Меню -->
 </header><!-- Шапка -->
-
+ <a name="main"></a><!--Ссылка-->
 <div>
- 
 <div class="main">
     <div class="title__container">
         <h1>Привет <br> Я Максим Мазурин</h1>
@@ -42,6 +42,7 @@
 </div>
 
 <div class="about_me"><!--Обо мне-->
+    <a name="about_me"></a><!--Ссылка-->
     <div class="logo_about_me">
         <h2>Обо мне</h2>
         <img src="../src/img/logo_about_me.jpg" alt="Ава_ВК">
@@ -82,7 +83,7 @@
     </div>
 
 </div><!--Мои навыки-->
-
+<a name="boxsing"></a><!--Ссылка-->
 <div class="boxsing"><!--Кейсы-->
     <div class="logo_box">
         <h2>Кейсы</h2>
@@ -144,6 +145,7 @@
 </div><!--Немного статистики-->
 
 <div class="reviews"><!--Отзывы-->
+    <a name="reviews"></a><!--Ссылка-->
     <div class="logo_reviews">
         <h2>Отзывы</h2>
     </div>
@@ -156,20 +158,21 @@
 </div>
 </div>
 <footer><!-- Подвал -->
+    <a name="my_contact"></a><!--Ссылка-->
     <div class="my_contact"><!--Мои контакты-->
         <div class="logo_my_contact">
             <h2>Мои контакты</h2>
         </div>
         <div class="colonka_my_contact">
             <div class="my_contact_icon">
-                <img src="../src/img/icon_my_contact_insta.png" alt="Инста">
-                <img src="../src/img/icon_my_contact.png" alt="Иконка">
-                <img src="../src/img/my_contact_faesbook.png" alt="Фаесбук">
-                <img src="../src/img/my_contact_twich.png" alt="Твич">
+                <a href="https://vk.com/pr236941147"><img src="../src/img/icon_my_contact_VK.png" alt="WK"></a>
+                <a href="https://github.com/WargoodSetru"><img src="../src/img/my_contact_GitHub.png" alt="GitHub"></a>
+                <a href="mailto:maks_mazurin@inbox.ru"><img src="../src/img/my_contact_Email.png" alt="Email"></a>
+                <a href="tel:+79513580180"><img src="../src/img/my_contact_tel.png" alt="Телефон"></a>
             </div>
         </div>
     </div><!--Мои контакты-->
-        <p>Сайт официальный и имеет какую-то силу</p>
+    <p>Сайт официальный и имеет какую-то силу</p>
 </footer><!-- Подвал -->
 
 </body><!-- Тело -->
