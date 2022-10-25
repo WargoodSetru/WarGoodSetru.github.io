@@ -1,5 +1,5 @@
 html{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(155, 118, 101);
     
     /*Запрещаем выделять текст*/
@@ -61,6 +61,7 @@ width: 200px;
 text-align: center;
 color: rgb(199, 176, 176);
 background-color: rgb(61, 44, 44);
+text-transform: uppercase; /* Текст большими буквами*/
 }
 
 .about_me{
@@ -131,7 +132,7 @@ background-color: rgb(61, 44, 44);
 .colonka h4{
     font-size: 25px;
     text-align: center;
-    margin: 10px;
+    padding-top: 40px;
 }
 
 .colonka p {
