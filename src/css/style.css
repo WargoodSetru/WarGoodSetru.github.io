@@ -1,12 +1,11 @@
 @font-face {
-    font-family: 'Marvin';
-    src: url('../fonts/Marvin.woff2') format('woff2'),
-        url('../fonts/Marvin.woff') format('woff');
+    font-family:'Marvin';
+    src: url('fonts/Marvin.woff2') format('woff2'),
+        url('fonts/Marvin.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-
 html{
     background-color: rgb(155, 118, 101);
     /*Запрещаем выделять текст*/
@@ -22,30 +21,38 @@ nav{
     background: #344051;
 }
 .logo{
-    color: aliceblue;
-    font-size: 28px;
     line-height: 60px;
-    padding-left: 120px;
-    float: left; /*Выравнивание по левой стороне*/
+  	float: left; /*Выравнивание по левой стороне*/
 }
 .menu{
     float: left; /*Выравнивание по левой стороне*/
-    padding-left: 150px;
 }
 .menu li{
     float:left;
     line-height: 60px;
     color: aliceblue;
     margin-right: 20px;
-    font-size: 17px;
     text-transform: uppercase; /* Текст большими буквами*/
 }
 .menu a{
+		text-decoration: none;
     color: aliceblue;
+		font-size: 20px;
+		font-family:'Marvin';
 }
 .logo a{
+	text-decoration: none;
     color: aliceblue;
+		font-size: 30px;
+		font-family:'Marvin';
 }
+
+
+
+
+
+
+
 
 .main{
     height: 700px;
