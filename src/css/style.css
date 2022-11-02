@@ -103,3 +103,43 @@ text-align: center;
 		margin-top: 10px;
 	}
  }
+/*Привет я Максим Мазурин,main,title__container*/
+
+/*Обо мне,logo_about_me*/
+.about_me{
+    background: url(../img/body_fons.jpg);
+    background-size: cover;
+    border-radius: 50px;
+    height: 700px;
+    margin-top: 10px;    
+}
+.logo_about_me h2{
+    text-align: center;
+    font-size: 45px;
+    padding-top: 15px;
+    color: rgb(61, 44, 44);
+}
+
+.ava_summary img{
+    float: left;
+    
+    height: 250px;
+    border-radius: 160px;
+	margin-right: 10px;
+}
+.ava_summary p{
+    color: rgb(61, 44, 44);
+    font-size: 25px;
+    margin-top: 50px;
+}
+.about_me input{
+    display: block;
+    color: rgb(199, 176, 176);
+    background-color: rgb(61, 44, 44);
+    font-size: 15px;
+    border-radius: 60px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+}
+/*Обо мне,logo_about_me*/
