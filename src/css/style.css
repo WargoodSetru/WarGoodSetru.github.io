@@ -119,28 +119,41 @@ text-align: center;
     padding-top: 15px;
     color: rgb(61, 44, 44);
 }
-
-.ava_summary img{
-    float: left;
+.img_logo img{
     height: 250px;
     border-radius: 160px;
-	margin-right: 10px;
+   
 }
 .about_me p{
     color: rgb(61, 44, 44);
     font-size: 25px;
+    width: 100%;
+    text-align: justify;
+    padding-right: 20px;
 }
-@media(max-width:1199px){
-.about_me p{
-    float: left;
+@media(max-width:991px){
+    .img_logo{
+        text-align: center;
+    }
+    .about_me p{
+    color: aqua;
+}
+@media(max-width:665px){
+    .about_me{
+        height: 400px;
+    }
+    .about_me p{
+        display: none;
 }
 }
-.sumbit_about_me input{
+}
+.img_logo input{
     color: rgb(199, 176, 176);
     background-color: rgb(61, 44, 44);
     font-size: 15px;
     border-radius: 60px;
     height: 40px;
     width: 200px;
+    margin-top: 5px;
 }
 /*Обо мне,logo_about_me*/
