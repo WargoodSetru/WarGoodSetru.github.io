@@ -5,178 +5,75 @@
     <meta name="description" content="Это моя первая страница...">
     <meta name="author" content="Maksim"><!--Говорит об разработчике-->
     <meta name="robots" content="index"><!--Index даёт право найти в интернете-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Отображение сайта на телефоне-->
 
-    <link rel="stylesheet" href="css/reset.css"> <!--Сброс стандартов стилей-->
+		<link rel="stylesheet" href="css/reset.css"> <!--Сброс стандартов стилей-->
+		<link rel="stylesheet" href="css/bootstrap.min.css"> <!--bootstrap-->
     <link rel="stylesheet" href="css/style.css"> <!--Стили сайта-->
-    <link rel="stylesheet" href="/фишки стилей.css"> <!--Стили сайта-->
-    
+
     <title> Мазурин Максим Веб-разработчик</title>
 </head>
 <body><!-- Тело -->
-
 <header><!-- Шапка -->
-
-
     <nav><!-- Меню -->
-        <div class="logo"><a href="#main">Максим Мазурин</a></div>
-        <div class="menu">
+			<div class="container">
+				<div class="row"><!-- больше 1200 xl меньше lg-->
+					<div class="col-xxl-4 col-xl-4 col-lg-3 col-8"><div class="logo"><a href="#main">Максим Мазурин</a></div></div>
+					<div class="col-xxl-6 col-xl-8 col-lg-8 d-none d-lg-block"><div class="menu">
             <ul>
-            <li><a href="#about_me">Обо мне</a></li>
-            <li><a href="#my_skill">Услуги</a></li>
-            <li><a href="#boxsing">Кейсы</a></li>
-            <li><a href="#cost_calculation">Прайс</a></li>
-            <li><a href="#reviews">Отзывы</a></li>
-            <li><a href="#my_contact">Контакты</a></li>
+            	<li><a href="#about_me">Обо мне</a></li>
+           		<li><a href="#my_skill">Услуги</a></li>
+            	<li><a href="#boxsing">Кейсы</a></li>
+            	<li><a href="#cost_calculation">Прайс</a></li>
+            	<li><a href="#reviews">Отзывы</a></li>
+            	<li><a href="#my_contact">Контакты</a></li>
             </ul>
         </div>
+			</div>
+			<div class="col-4 d-flex d-lg-none flex-column justify-content-center align-items-end">
+				<div class="dropdown">
+					<a class="btn btn-outline-secondary dropdown-toggle text_bt_color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  <h>Навигация</h>
+					</a>				  
+					<ul class="dropdown-menu colors">
+					  <li><a class="dropdown-item" href="#about_me">Обо мне</a></li>
+					  <li><a class="dropdown-item" href="#my_skill">Услуги</a></li>
+					  <li><a class="dropdown-item" href="#boxsing">Кейсы</a></li>
+					  <li><a class="dropdown-item" href="#cost_calculation">Прайс</a></li>
+					  <li><a class="dropdown-item" href="#reviews">Отзывы</a></li>
+					  <li><a class="dropdown-item" href="#my_contact">Контакты</a></li>					  
+					</ul>
+				  </div>
+			</div>
+
+			</div>
+				</div>
+			</div>
+			
     </nav><!-- Меню -->
 </header><!-- Шапка -->
- <a name="main"></a><!--Ссылка-->
-<div>
-<div class="main">
-    <div class="title__container">
+
+<!--Привет я Максим Мазурин-->
+<section class="main">
+<div class="container h-100"><div class="row align-items-center h-100"><div class="col-12">
+	<div class="title__container">
         <h1>Привет <br> Я Максим Мазурин</h1>
         <h4>Веб-разработчик</h4>
         <input type="submit" value="Обо мне">
         <input type="submit" value="Мои работы">
     </div>
+		</div>
+	</div>
 </div>
-<a name="about_me"></a><!--Ссылка-->
-<div class="about_me"><!--Обо мне-->
-    <div class="logo_about_me">
-        <h2>Обо мне</h2>
-    </div>
-    <div class="ava_summary">
-        <div class="sumbit_about_me">
-            <img src="../src/img/logo_about_me.jpg" alt="Ава_ВК">
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consectetur eligendi reprehenderit asperiores in, eum, sequi eos veniam vitae, sapiente itaque? Suscipit, expedita autem deleniti excepturi quis quas iure corporis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, voluptas! Animi facilis voluptatibus corporis veritatis quibusdam, non aperiam culpa est amet fuga! Enim quod placeat dicta id totam dolore sapiente!</p>
-    </div>
-    <input type="submit" name="Dowaland_about_me" value="Резюме">
-</div><!--Обо мне-->
+</section>
+<!--Привет я Максим Мазурин-->
 
-<a name="my_skill"></a><!--Ссылка-->
-<div class="my_skill"><!--Мои навыки-->
-    <div class="logo_my_skill">
-        <h2>Мои навыки</h2>
-    </div>
 
-    <div class="colonka">
-        <div class="web_design"><!--Веб дизайн-->
-            <h4>Веб дизайн</h4>
-            <img src="../src/img/web_design_icon.png" alt="Веб дизайн">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa ex fuga modi doloremque ipsam velit blanditiis.</p>
-        </div>
-        <div class="development"><!--Разработка-->
-            <h4>Разработка</h4>
-            <img src="../src/img/development_icon.png" alt="Разработка">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa ex fuga modi doloremque ipsam velit blanditiis.</p>
-        </div>
-        <div class="seo_optimization"><!--Сео-оптимизация-->
-            <h4>Сео-оптимизация</h4>
-            <img src="../src/img/seo_optimization_icon.png" alt="Сео-оптимизация">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa ex fuga modi doloremque ipsam velit blanditiis.</p>
-        </div>
-        <div class="marketing"><!--Маркетинг-->
-            <h4>Маркетинг</h4>
-            <img src="../src/img/marketing_icon.png" alt="Маркетинг">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa ex fuga modi doloremque ipsam velit blanditiis.</p>
-        </div>
-    </div>
-
-</div><!--Мои навыки-->
-<a name="boxsing"></a><!--Ссылка-->
-<div class="boxsing"><!--Кейсы-->
-    <div class="logo_box">
-        <h2>Кейсы</h2>
-        <p>Скоро тут будет слайдер, ну а пока кот.</p>
-    </div>
-    <div class="box">
-        <img src="../src/img/slider.png" alt="Слайдер">
-    </div>
-</div><!--Кейсы-->
-<a name="cost_calculation"></a><!--Ссылка-->
-<div class="cost_calculation"><!--Расчёт стоимости-->
-    <div class="logo_cost_calculation">
-        <h2>Расчёт стоимости</h2>
-    </div>
-        <select name="list1" id="list"><!--multiple раскрывает список -->
-            <option value="opt1"><h3>Тип сайта</h3></option>
-            <option value="opt2"><h3>Тип сайта</h3></option>
-            <option value="opt3"><h3>Тип сайта</h3> </option>
-        </select>
-        <select name="list1" id="list"><!--multiple раскрывает список -->
-            <option value="opt1"><h3>Дизайн</h3> </option>
-            <option value="opt2"><h3>Дизайн</h3> </option>
-            <option value="opt3"><h3>Дизайн</h3></option>
-        </select>
-        <select name="list1" id="list"><!--multiple раскрывает список -->
-            
-            <option value="opt1"><h3>Адаптивность</h3> </option>
-            <option value="opt2"><h3>Адаптивность</h3></option>
-            <option value="opt3"><h3>Адаптивность</h3></option>
-        </select>
-    
-</div><!--Расчёт стоимости-->
-
-<div class="statistics"><!--Немного статистики-->
-    <div class="logo_statistics">
-        <h2>Немного статистики</h2>
-    </div>
-    <div class="colonka_statistics">
-        <div class="1option">
-            <h2>120</h2>
-            <p>Lorem ipsum dolor sit etur adipisicing elit.</p>
-        </div>
-        
-        <div class="2option">
-            <h2>4600</h2>
-            <p>Lorem ipsum dolor sit etur adipisicing elit.</p>
-        </div>
-    
-        <div class="3option">
-            <h2>340</h2>
-            <p>Lorem ipsum dolor sit etur adipisicing elit.</p>
-        </div>
-    
-        <div class="4option">
-            <h2>23</h2>
-            <p>Lorem ipsum dolor sit etur adipisicing elit.</p>
-        </div>
-    </div>
-</div><!--Немного статистики-->
-
-<div class="reviews"><!--Отзывы-->
-    <a name="reviews"></a><!--Ссылка-->
-    <div class="logo_reviews">
-        <h2>Отзывы</h2>
-    </div>
-    <div class="reviews_user">
-        <img src="../src/img/reviews_user.png" alt="Иконка user">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-</div><!--Отзывы-->
-</div>
-</div>
 <footer><!-- Подвал -->
-    <a name="my_contact"></a><!--Ссылка-->
-    <div class="my_contact"><!--Мои контакты-->
-        <div class="logo_my_contact">
-            <h2>Мои контакты</h2>
-        </div>
-        <div class="colonka_my_contact">
-            <div class="my_contact_icon">
-                <a href="https://vk.com/pr236941147"><img src="../src/img/icon_my_contact_VK.png" alt="WK"></a>
-                <a href="https://github.com/WargoodSetru"><img src="../src/img/my_contact_GitHub.png" alt="GitHub"></a>
-                <a href="mailto:maks_mazurin@inbox.ru"><img src="../src/img/my_contact_Email.png" alt="Email"></a>
-                <a href="tel:+79513580180"><img src="../src/img/my_contact_tel.png" alt="Телефон"></a>
-            </div>
-        </div>
-    </div><!--Мои контакты-->
-    <p>Сайт официальный и имеет какую-то силу</p>
+   
 </footer><!-- Подвал -->
+
+<script src="/js/bootstrap.bundle.min.js"></script>
 
 </body><!-- Тело -->
 </html>

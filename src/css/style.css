@@ -1,7 +1,7 @@
 @font-face {
     font-family:'Marvin';
-    src: url('fonts/Marvin.woff2') format('woff2'),
-        url('fonts/Marvin.woff') format('woff');
+    src: url('/fonts/Marvin.woff2') format('woff2'),
+        url('/fonts/Marvin.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -12,61 +12,65 @@ html{
     -moz-user-select: none;
     -khtml-user-select: none;
     user-select: none;
-    font-family:'Marvin';  
 }
+body{
+	background-color: rgb(155, 118, 101);
+}
+/*header,Шапка,Меню*/
 nav{
-    position: fixed;
-    width: 100%;
-    height: 60px;
-    background: #344051;
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	background: #344051;
+
 }
-.logo{
-    line-height: 60px;
-  	float: left; /*Выравнивание по левой стороне*/
-}
-.menu{
-    float: left; /*Выравнивание по левой стороне*/
-}
-.menu li{
-    float:left;
-    line-height: 60px;
-    color: aliceblue;
-    margin-right: 20px;
-    text-transform: uppercase; /* Текст большими буквами*/
-}
-.menu a{
-		text-decoration: none;
-    color: aliceblue;
-		font-size: 20px;
-		font-family:'Marvin';
-}
+
 .logo a{
-	text-decoration: none;
-    color: aliceblue;
-		font-size: 30px;
-		font-family:'Marvin';
+float: left; /*Выравнивание по левой стороне*/
+text-decoration: none;
+line-height: 80px;
+color: aliceblue;
+font-size: 25px;
+
 }
 
+.menu a{
+	text-decoration: none;
+	line-height: 60px;
+	float: left; /*Выравнивание по левой стороне*/
+	color: aliceblue;
+	font-size: 15px;
+	margin-left: 30px;
+	text-transform: uppercase; /* Текст большими буквами*/
+}
 
+.text_bt_color{
+	color: aliceblue;
+	background-color: rgba(87, 67, 105, 0.842);
+	font-size: 20px;
+}
+.colors{
+	text-align: center;
+	background-color: rgba(87, 67, 105, 0.842);
+}
+.colors a{
+color: aliceblue;
+font-size: 20px;
+}
+/*header,Шапка,Меню*/
 
-
-
-
-
-
+/*Привет я Максим Мазурин,main,title__container*/
 .main{
-    height: 700px;
     background: url(../img/main_fons.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     border-radius: 50px;
-    box-shadow:#344051;   
+    box-shadow:#344051; 
+	height: 700px;  
 }
 .title__container {
-    font-size: 60px;
-    color: rgb(61, 44, 44);
-    margin-left: 300px;
-    padding-top: 200px;
+    color:rgb(61, 44, 44);
+	width: 100%;
 }
 .title__container input{
 font-size: 15px;
@@ -78,218 +82,24 @@ color: rgb(199, 176, 176);
 background-color: rgb(61, 44, 44);
 text-transform: uppercase; /* Текст большими буквами*/
 }
+.title__container h1{
+	font-size: 45px;		
+}
+.title__container h4{
+	font-size: 25px;
+}
+ @media(max-width:450px){
 
-.about_me{
-    background: url(../img/body_fons.jpg);
-    background-size: cover;
-    border-radius: 50px;
-    height: 650px;
-    padding-top: 100px;
-    margin-top: 10px;    
-}
-.logo_about_me h2{
-    text-align: center;
-    font-size: 45px;
-    padding-top: 15px;
-    color: rgb(61, 44, 44);
-}
-
-.ava_summary img{
-    float: left;
-    display: block;
-    height: 250px;
-    border-radius: 160px;
-    margin-left: 30px;
-}
-.ava_summary p{
-    color: rgb(61, 44, 44);
-    font-size: 25px;
-    margin-top: 50px;
-    padding: 15px;
-    padding-left: 300px;
-    text-align: justify;
-}
-.about_me input{
-    display: block;
-    color: rgb(199, 176, 176);
-    background-color: rgb(61, 44, 44);
-    font-size: 15px;
-    border-radius: 60px;
-    height: 40px;
-    width: 200px;
-    text-align: center;
-    margin-left: 20px;
-}
-
-
-
-.my_skill{
-    background: url(../img/body_fons.jpg);
-    background-size: cover;
-    border-radius: 50px;
-    height: 650px;
-    padding-top: 60px;
-    margin-top: 10px;
-    
-}
-.logo_my_skill{
-    text-align: center;
-    font-size: 45px;
-    padding-top: 15px;
-    color: rgb(61, 44, 44);
-    
-}
-.colonka{
-    columns: 90px 4;
-    margin: 40px;
-    font-size: 20px;
-}
-.colonka h4{
-    font-size: 25px;
-    text-align: center;
-    padding-top: 40px;
-}
-
-.colonka p {
-    text-align: justify;
-    padding-top: 60px;
-}
-.colonka img{
-    height: 160px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-}
-.boxsing{
-    background: url(../img/body_fons.jpg);
-    background-size: cover;
-    border-radius: 50px;
-    height: 650px;
-    padding-top: 60px;
-    margin-top: 10px;
-}
-.logo_box{
-    text-align: center;
-    font-size: 45px;
-    padding-top: 15px;
-    color: rgb(61, 44, 44);
-    
-}
-.box img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 100px;
-    height: 290px;
-}
-
-.cost_calculation{
-    background: url(../img/body_fons.jpg);
-    background-size: cover;
-    border-radius: 50px;
-    height: 650px;
-    padding-top: 60px;
-    margin-top: 10px;
-    
-}
-.logo_cost_calculation{
-    text-align: center;
-    font-size: 45px;
-    padding-top: 15px;
-    color: rgb(61, 44, 44);
-}
-.cost_calculation select{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.statistics{
-    background: url(../img/body_fons.jpg);
-    background-size: cover;
-    border-radius: 50px;
-    height: 650px;
-    padding-top: 60px;
-    margin-top: 10px;
-}
-.logo_statistics{
-    text-align: center;
-    font-size: 28px;
-    padding-top: 15px;
-    color: rgb(61, 44, 44);
-}
-
-.colonka_statistics{
-    columns: 90px 4;
-    margin: 40px;
-    font-size: 20px;
-}
-.colonka_statistics h2{
-    font-size: 25px;
-    text-align: center;
-    margin: 10px;
-}
-
-.colonka_statistics p{
-    text-align: justify;
-    padding-top: 15px;
-}
-.reviews{
-    background: url(../img/body_fons.jpg);
-    background-size: cover;
-    border-radius: 50px;
-    height: 730px;
-    padding-top: 60px;
-    margin-top: 10px;
-}
-.logo_reviews{
-    text-align: center;
-    font-size: 45px;
-    padding-top: 70px;
-    color: rgb(61, 44, 44);
-}
-.reviews_user img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 100px;
-    height: 290px;
-}
-.reviews p{
-    text-align: center;
-    margin-top: 20px;
-}
-footer{
-    width: 100%;
-    height: 301px;
-    background: #344051;
-    margin-top: 10px;
-}
-footer p {
-color:aliceblue;
-font-size: 20px;
-text-align:center;
-padding-top: 32px;
-}
-footer h2{
-    text-align: center;
-    font-size: 28px;
-    padding-top: 15px;
-    color: aliceblue;
-}
-.colonka_my_contact{
-    padding-top: 40px;
-    columns: 90px 4;
-    margin: 40px;
-    font-size: 20px;
-    
-}
-.my_contact_icon img{
-    height: 80px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.my_contact_icon a{
-    display: block;
-}
+	.title__container{
+text-align: center;		
+	}
+	.title__container h1{
+		font-size: 45px;		
+	}
+	.title__container h4{
+		font-size: 25px;
+	}
+	.title__container input{
+		margin-top: 10px;
+	}
+ }
