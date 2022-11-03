@@ -135,8 +135,6 @@ text-align: center;
     .img_logo{
         text-align: center;
     }
-    .about_me p{
-    color: aqua;
 }
 @media(max-width:665px){
     .about_me{
@@ -144,7 +142,6 @@ text-align: center;
     }
     .about_me p{
         display: none;
-}
 }
 }
 .img_logo input{
@@ -157,3 +154,75 @@ text-align: center;
     margin-top: 5px;
 }
 /*Обо мне,logo_about_me*/
+
+/*Мои навыки,web_design,development,seo_optimization,marketing*/
+
+.my_skill{
+    background: url(../img/body_fons.jpg);
+    background-size: cover;
+    border-radius: 50px;
+    height: 650px;
+    padding-top: 60px;
+    margin-top: 10px;
+    
+}
+.logo_my_skill h2{
+    text-align: center;
+    font-size: 45px;
+    padding-top: 15px;
+    color: rgb(61, 44, 44);
+    
+}
+.colonka{
+    columns: 90px 4;
+    margin: 40px;
+    font-size: 20px;
+}
+.my_skill h4{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(61, 44, 44);
+    
+}
+
+.my_skill p {
+    text-align: justify;
+    font-size: 20px;
+    color: rgb(61, 44, 44);
+}
+.my_skill img{
+    height: 160px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+/*Настройка размера экрана секции*/
+@media(max-width:990px){
+    .my_skill{
+        height: 750px;
+    }
+}
+@media(max-width:874px){
+    .my_skill{
+        height: 800px;
+    }
+}
+@media(max-width:742px){
+    .my_skill{
+        height: 900px;
+    }
+}
+@media(max-width:575px){
+    .my_skill{
+        height: 1000px;
+    }
+}
+@media(max-width:767px){
+    .my_skill p {
+   display: none;
+}
+}
+/*Настройка размера экрана секции*/
+/*Мои навыки,web_design,development,seo_optimization,marketing*/
+
