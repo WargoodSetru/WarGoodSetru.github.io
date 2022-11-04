@@ -295,7 +295,83 @@ text-align: center;
         height: 800px;
 }
 }
-
-
-
 /*Немного статистики, statistics*/
+
+/*Отзывы,reviews,reviews_user*/
+.reviews{
+    background: url(../img/body_fons.jpg);
+    background-size: cover;
+    border-radius: 50px;
+    height: 730px;
+    padding-top: 60px;
+    margin-top: 10px;
+}
+.logo_reviews h2{
+    text-align: center;
+    font-size: 45px;
+    padding-top: 70px;
+    color: rgb(61, 44, 44);
+}
+.reviews_user img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    height: 290px;
+}
+.reviews_user p{
+    text-align: center;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(61, 44, 44);
+}
+@media(max-width:767px){
+    .reviews_user p{
+        display: none;
+}
+}
+/*Отзывы,reviews,reviews_user*/
+
+/*Подвал,logo_my_contact*/
+footer{
+    width: 100%;
+    height: 301px;
+    background: #214479c9;
+    margin-top: 10px;
+}
+footer p {
+    color:aliceblue;
+    font-size: 20px;
+    text-align:center;
+    padding-top: 32px;
+    }
+    footer h2{
+        text-align: center;
+        font-size: 28px;
+        padding-top: 15px;
+        color: aliceblue;        
+    }
+    footer img{
+        height: 160px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+    }
+
+@media(max-width:991px){
+    footer img{
+        height: 120px;
+    }
+    footer{
+        height: 400px;
+    }
+}
+@media(max-width:575px){
+    footer {
+        height: 700px;
+    }
+}
+
+
+/*Подвал,logo_my_contact*/
