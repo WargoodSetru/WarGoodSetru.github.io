@@ -132,9 +132,6 @@ text-align: center;
     padding-top: 30px;
     padding-right: 40px;
 }
-
-    
-
 @media(max-width:991px){
     .img_logo{
         
@@ -154,7 +151,7 @@ text-align: center;
 
 
 }
-.about_me button{
+.img_logo input{
     color: rgb(199, 176, 176);
     background-color: rgb(61, 44, 44);
     font-size: 15px;
