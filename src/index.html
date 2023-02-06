@@ -151,12 +151,12 @@
 <a name="cost_calculation"></a><!--Ссылка-->
 <section class="cost_calculation">
 	<div class="container"><div class="row">
-		<div class="col"> <div class="logo_cost_calculation">
+		<div class="col"> 
+			<div class="logo_cost_calculation">
 			<h2>Расчёт стоимости</h2>
 			<h2>Тип сайта:</h2>
-
+			</div>
 <div class="Calculator_sait">
-
 
 	<script type="text/javascript">
 		/*
@@ -181,30 +181,31 @@
 		 }
 	
 	</script>
-	 </head>
-	 <body>
+	<div>
+		<select onchange="calc()" id="type_design">
+			<option value="0">Выбрать</option>
+			<option value="3000">Простой сайт</option>
+			<option value="5000">Сложный сайт</option>
+			<option value="10000">Интернет-магазин</option>
+		</select><br/>
+	   <p><label for="is_html">Требуется адаптивность?</label>
+	   <input type="checkbox" onchange="calc()" value="3000" id="is_html" /></p>
 
-		 <select onchange="calc()" id="type_design">
-			 <option value="0">Выбрать</option>
-			 <option value="3000">Простой сайт</option>
-			 <option value="5000">Сложный сайт</option>
-			 <option value="10000">Интернет-магазин</option>
-		 </select><br/>
-		 <div>
-
-		<p><label for="is_html">Требуется адаптивность?</label>
-		<input type="checkbox" onchange="calc()" value="3000" id="is_html" /></p></div>
-
-		 
-		 <p>Кол-во страниц <input type="text" id="count" value=" 1 " onchange="calc()" /></p>
-		 <p>Стоимость дизайна сайта: <span id="result">0</span> руб.</p>
-		 
-	 </body>
-	
 		
-		
-	</section>
+		<p>Кол-во страниц <input type="text" id="count" value=" 1 " onchange="calc()" /></p>
+		<p>Стоимость дизайна сайта: <span id="result">0</span> руб.</p>
+	</div>
+
 </div>
+		</div>
+	</div>
+	</div>
+
+	
+	
+
+	</section>
+
 
 <!--Расчет стоимости-->
 
