@@ -269,6 +269,20 @@ text-align: center;
     padding-top: 15px;
     color: rgb(61, 44, 44);
 }
+
+.Calculator_sait{
+    text-align:start;
+    padding-top: 50px;
+    font-size: 30px;
+    
+}
+
+@media(max-width:464px){
+    .Calculator_sait{
+        text-align: center;
+
+}
+}
 /*Расчет стоимости,cost_calculation,logo_cost_calculation*/
 
 /*Немного статистики, statistics*/

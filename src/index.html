@@ -54,7 +54,8 @@
 </header><!-- Шапка -->
 
 <!--Привет я Максим Мазурин-->
-<a name="about_me"></a><!--Ссылка-->
+<a name="main"></a><!--Ссылка-->
+
 <section class="main">
 <div class="container h-100"><div class="row align-items-center h-100"><div class="col-12">
 	<div class="title__container">
@@ -70,7 +71,7 @@
 <!--Привет я Максим Мазурин-->
 
 <!--Обо мне-->
-<a name="main"></a><!--Ссылка-->
+<a name="about_me"></a><!--Ссылка-->
 <section class="about_me">
 <div class="container-fluid">
 	<div class="row">
@@ -152,9 +153,59 @@
 	<div class="container"><div class="row">
 		<div class="col"> <div class="logo_cost_calculation">
 			<h2>Расчёт стоимости</h2>
-		</div></div>
-	</div></div>
-</section>
+			<h2>Тип сайта:</h2>
+
+<div class="Calculator_sait">
+
+
+	<script type="text/javascript">
+		/*
+		 * Функция подсчета стоимости услуг на создания дизайна сайта
+		 */
+		 function calc() {
+			 //получаем ссылку на элемент Select (Тип дизайна)
+			 var type_design = document.getElementById("type_design");
+			 //получаем ссылку на чекбокс (Требуется верстка?)
+			 var is_html = document.getElementById("is_html");
+			 //получаем ссылку на элемент input (Кол-во вариантов)
+			 var count = document.getElementById("count");
+			 //получаем ссылку на элемент span, в него будем писать стоимость дизайна
+			 var result = document.getElementById("result"); 
+	
+			 var price = 0;
+			 price += parseInt(type_design.options[type_design.selectedIndex].value);
+			 price += (is_html.checked == true) ? parseInt(is_html.value) : 0;
+			 price = parseInt(count.value) * price;
+	
+			 result.innerHTML = price;
+		 }
+	
+	</script>
+	 </head>
+	 <body>
+
+		 <select onchange="calc()" id="type_design">
+			 <option value="0">Выбрать</option>
+			 <option value="3000">Простой сайт</option>
+			 <option value="5000">Сложный сайт</option>
+			 <option value="10000">Интернет-магазин</option>
+		 </select><br/>
+		 <div>
+
+		<p><label for="is_html">Требуется адаптивность?</label>
+		<input type="checkbox" onchange="calc()" value="3000" id="is_html" /></p></div>
+
+		 
+		 <p>Кол-во страниц <input type="text" id="count" value=" 1 " onchange="calc()" /></p>
+		 <p>Стоимость дизайна сайта: <span id="result">0</span> руб.</p>
+		 
+	 </body>
+	
+		
+		
+	</section>
+</div>
+
 <!--Расчет стоимости-->
 
 <!--Немного статистики-->
