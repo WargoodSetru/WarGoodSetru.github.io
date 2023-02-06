@@ -8,12 +8,21 @@
 }
 html{
     background-color: rgb(155, 118, 101);
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;/*Запрет скрола горизонтально*/
+    
+    
     /*Запрещаем выделять текст*/
     -moz-user-select: none;
     -khtml-user-select: none;
     user-select: none;
+    /*Запрещаем выделять текст*/
 }
 body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;/*Запрет скрола горизонтально*/
 	background-color: rgb(155, 118, 101);
 }
 /*header,Шапка,Меню*/
@@ -116,7 +125,7 @@ text-align: center;
 .logo_about_me h2{
     text-align: center;
     font-size: 45px;
-    padding-top: 15px;
+    padding-top: 100px;
     color: rgb(61, 44, 44);
 }
 .img_logo img{
@@ -151,8 +160,11 @@ text-align: center;
     .about_me p{
         display: none;
 }
-
-
+@media(max-width:990px){
+    .about_me{
+        height: 750px;
+    }
+}
 }
 .about_me button{
     color: rgb(199, 176, 176);
@@ -163,6 +175,14 @@ text-align: center;
     width: 200px;
     margin-top: 5px;
 }
+
+
+
+
+
+
+
+
 /*Обо мне,logo_about_me*/
 
 /*Мои навыки,web_design,development,seo_optimization,marketing*/
@@ -281,6 +301,11 @@ text-align: center;
     .Calculator_sait{
         text-align: center;
 
+}
+@media(max-width:990px){
+    .cost_calculation{
+        height: 750px;
+    }
 }
 }
 /*Расчет стоимости,cost_calculation,logo_cost_calculation*/

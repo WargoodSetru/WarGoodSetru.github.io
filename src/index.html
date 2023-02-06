@@ -138,8 +138,7 @@
 <!--Кейсы готовых работ-->
 <a name="boxsing"></a><!--Ссылка-->
 <section class="boxsing">
-	<div class="container"><div class="row">
-	<div class="col">
+	<div class="container"><div class="row"><div class="col">
 		<div class="logo_box">
 			<h2>Кейсы</h2>
 		</div>
@@ -150,60 +149,29 @@
 <!--Расчет стоимости-->
 <a name="cost_calculation"></a><!--Ссылка-->
 <section class="cost_calculation">
-	<div class="container"><div class="row">
-		<div class="col"> 
+	<div class="container"><div class="row"><div class="col"> 
 			<div class="logo_cost_calculation">
 			<h2>Расчёт стоимости</h2>
 			<h2>Тип сайта:</h2>
 			</div>
 <div class="Calculator_sait">
 
-	<script type="text/javascript">
-		/*
-		 * Функция подсчета стоимости услуг на создания дизайна сайта
-		 */
-		 function calc() {
-			 //получаем ссылку на элемент Select (Тип дизайна)
-			 var type_design = document.getElementById("type_design");
-			 //получаем ссылку на чекбокс (Требуется верстка?)
-			 var is_html = document.getElementById("is_html");
-			 //получаем ссылку на элемент input (Кол-во вариантов)
-			 var count = document.getElementById("count");
-			 //получаем ссылку на элемент span, в него будем писать стоимость дизайна
-			 var result = document.getElementById("result"); 
 	
-			 var price = 0;
-			 price += parseInt(type_design.options[type_design.selectedIndex].value);
-			 price += (is_html.checked == true) ? parseInt(is_html.value) : 0;
-			 price = parseInt(count.value) * price;
-	
-			 result.innerHTML = price;
-		 }
-	
-	</script>
-	<div>
 		<select onchange="calc()" id="type_design">
 			<option value="0">Выбрать</option>
 			<option value="3000">Простой сайт</option>
 			<option value="5000">Сложный сайт</option>
 			<option value="10000">Интернет-магазин</option>
 		</select><br/>
-	   <p><label for="is_html">Требуется адаптивность?</label>
+	   <label for="is_html">Требуется адаптивность?</label>
 	   <input type="checkbox" onchange="calc()" value="3000" id="is_html" /></p>
-
-		
 		<p>Кол-во страниц <input type="text" id="count" value=" 1 " onchange="calc()" /></p>
 		<p>Стоимость дизайна сайта: <span id="result">0</span> руб.</p>
-	</div>
-
+	
 </div>
 		</div>
 	</div>
 	</div>
-
-	
-	
-
 	</section>
 
 
@@ -275,6 +243,35 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 <script src="js/my_codeJS.js"></script>
+
+<!--Расчет стоимости-->
+<script type="text/javascript">
+	/*
+	 * Функция подсчета стоимости услуг на создания дизайна сайта
+	 */
+	 function calc() {
+		 //получаем ссылку на элемент Select (Тип дизайна)
+		 var type_design = document.getElementById("type_design");
+		 //получаем ссылку на чекбокс (Требуется верстка?)
+		 var is_html = document.getElementById("is_html");
+		 //получаем ссылку на элемент input (Кол-во вариантов)
+		 var count = document.getElementById("count");
+		 //получаем ссылку на элемент span, в него будем писать стоимость дизайна
+		 var result = document.getElementById("result"); 
+
+		 var price = 0;
+		 price += parseInt(type_design.options[type_design.selectedIndex].value);
+		 price += (is_html.checked == true) ? parseInt(is_html.value) : 0;
+		 price = parseInt(count.value) * price;
+
+		 result.innerHTML = price;
+	 }
+
+</script>
+<!--Расчет стоимости-->
+
+
+
 <!--Скрипты для кнопки меню-->
 </body><!-- Тело -->
 </html>
