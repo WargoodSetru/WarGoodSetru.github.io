@@ -159,13 +159,13 @@
 	
 		<select onchange="calc()" id="type_design">
 			<option value="0">Выбрать</option>
-			<option value="3000">Простой сайт</option>
-			<option value="5000">Сложный сайт</option>
+			<option value="3000">Сайт визитка</option>
+			<option value="5000">Сайт</option>
 			<option value="10000">Интернет-магазин</option>
 		</select><br/>
 	   <label for="is_html">Требуется адаптивность?</label>
 	   <input type="checkbox" onchange="calc()" value="3000" id="is_html" /></p>
-		<p>Кол-во страниц <input type="text" id="count" value=" 1 " onchange="calc()" /></p>
+		<p>Кол-во страниц <input type="number" value="1" id="count" onchange="calc()" /></p>
 		<p>Стоимость дизайна сайта: <span id="result">0</span> руб.</p>
 	
 </div>
@@ -250,13 +250,13 @@
 	 * Функция подсчета стоимости услуг на создания дизайна сайта
 	 */
 	 function calc() {
-		 //получаем ссылку на элемент Select (Тип дизайна)
+		 //получаем ссылку на элемент Select (Тип сайта)
 		 var type_design = document.getElementById("type_design");
 		 //получаем ссылку на чекбокс (Требуется верстка?)
 		 var is_html = document.getElementById("is_html");
 		 //получаем ссылку на элемент input (Кол-во вариантов)
 		 var count = document.getElementById("count");
-		 //получаем ссылку на элемент span, в него будем писать стоимость дизайна
+		 //получаем ссылку на элемент span, в него будем писать стоимость сайта
 		 var result = document.getElementById("result"); 
 
 		 var price = 0;

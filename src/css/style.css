@@ -177,7 +177,11 @@ text-align: center;
 }
 
 
-
+@media(max-width:838px){
+    .about_me{
+        height: 820px;
+    }
+}
 
 
 
@@ -286,16 +290,30 @@ text-align: center;
 .logo_cost_calculation h2{
     text-align: center;
     font-size: 45px;
-    padding-top: 15px;
+    padding-top: 5px;
     color: rgb(61, 44, 44);
 }
 
 .Calculator_sait{
+    padding-left: 20px;
     text-align:start;
     padding-top: 50px;
     font-size: 30px;
     
 }
+
+.Calculator_sait input{
+   border-radius: 20px;
+    padding-left: 30px;
+    
+    
+}
+
+.Calculator_sait select{
+border-radius: 20px;
+padding-left: 30px;
+     
+ }
 
 @media(max-width:464px){
     .Calculator_sait{
@@ -308,6 +326,27 @@ text-align: center;
     }
 }
 }
+
+.Calculator_sait{
+    border-radius: 50px;
+    box-shadow:#344051; 
+    background-color: #d0d1a4c9;
+    height: 300px;
+}
+@media(max-width:784px){
+    .Calculator_sait{
+        height: 400px;
+    }
+        .Calculator_sait input{
+     
+             height: 40px;
+             width: 100px;
+         }
+        }
+    
+
+
+
 /*Расчет стоимости,cost_calculation,logo_cost_calculation*/
 
 /*Немного статистики, statistics*/
@@ -356,7 +395,7 @@ text-align: center;
 .logo_reviews h2{
     text-align: center;
     font-size: 45px;
-    padding-top: 70px;
+    padding-top: 20px;
     color: rgb(61, 44, 44);
 }
 .reviews_user img{
